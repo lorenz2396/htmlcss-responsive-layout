@@ -1,20 +1,106 @@
-/* 
-    RESET
-*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import "reset.css";
+@import "general.css";
+@import "colors.css";
+
+/* HEADER */
+
+.header-main-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
 }
 
-/* 
-    GENERAL
-*/
-body {
-    font-family: Arial, Helvetica, sans-serif;
+.header-main-content .nav-container{
+    display: none;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.header-main-content .nav-container ul{
+    display: flex;
+    list-style: none;
 }
+
+.header-main-content .nav-container ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+
+
+
+/* MAIN */
+
+main .section{
+    padding: 2.5rem 0;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.625rem;
+}
+
+.card{
+    width: calc(100% - 1.25rem);
+    margin: 0 .625rem;
+
+}
+
+.card > div {
+    padding: .625rem;
+}
+
+
+/* 
+-------------------
+    RESPONSIVE
+-------------------
+*/
+
+    /* 
+        TABLET 
+    */
+
+@media screen and (max-width:768){
+
+    /* HEADER */
+
+   
+
+    /* MAIN */
+    .card {
+        width: calc((100% / 3) - 1.25rem);
+    }
+
+    .card:first-child {
+        width: calc((100% / 3) * 2);
+    }
+}
+
+    /* 
+        DESKTOP
+    */
+@media screen and (min-width:992){
+
+    /* HEADER */
+
+    .header-main-content .hamburger-container{
+        display: none;
+    }
+
+    .header-main-content .nav-container{
+        display: block;
+    }
+
+    /* MAIN */
+
+    .card .main-card-content{
+        display: flex;
+    }
+
+    .card .main-card-content > div{
+        width: 50%;
+    }
+
+}
+
