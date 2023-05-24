@@ -7,8 +7,10 @@
     --secondary-color-header: #b5ddff;
 
     --first-color-main: #9792e4;
+    --first-light-color-main: #D5D4F4;
 
     --color-big-test-footer: #fdc15f;
+    --color-footer-bottom: #333333;
 }
 
 .main-color-text{
@@ -35,6 +37,14 @@
     background-color: var(--first-color-main);
 }
 
+.first-color-light-bg{
+    background-color: var(--first-light-color-main);
+}
+
 .text-color-footer{
     color: var(--color-big-test-footer);
+}
+
+.footer-bottom-color-bg{
+    background-color: var(--color-footer-bottom);
 }
